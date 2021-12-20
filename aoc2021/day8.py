@@ -77,6 +77,7 @@ def part2(digits):
 
     return sum_output
 
+
 if __name__ == '__main__':
     digits = get_inputs('day8.txt')
     print(part1(digits))
