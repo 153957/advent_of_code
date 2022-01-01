@@ -70,6 +70,12 @@ class TestDay9(TestDayMixin, unittest.TestCase):
     part2 = 1134
 
 
+class TestDay10(TestDayMixin, unittest.TestCase):
+    n = 10
+    part1 = 26397
+    part2 = 288957
+
+
 class TestDay25(TestDayMixin, unittest.TestCase):
     n = 25
     part1 = 58
