@@ -1,6 +1,6 @@
 import unittest
 
-from aoc2021 import day2, day3, get_inputs
+from aoc2021 import get_inputs
 
 
 class TestDayMixin:
