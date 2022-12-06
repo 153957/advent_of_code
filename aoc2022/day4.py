@@ -1,5 +1,3 @@
-import string
-
 from .get_inputs import get_inputs
 
 
@@ -15,6 +13,7 @@ def part1(assignments):
         ):
             contained_pairs += 1
     return contained_pairs
+
 
 def part2(assignments):
     overlapping_pairs = 0
