@@ -43,6 +43,6 @@ def part2(crates_and_moves):
 
 
 if __name__ == '__main__':
-    measurements = get_inputs('day5.txt')
-    print(part1(measurements))
-    print(part2(measurements))
+    crates_and_moves = get_inputs('day5.txt')
+    print(part1(crates_and_moves))
+    print(part2(crates_and_moves))

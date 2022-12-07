@@ -18,6 +18,6 @@ def part2(calories):
 
 
 if __name__ == '__main__':
-    measurements = get_inputs('day1.txt')
-    print(part1(measurements))
-    print(part2(measurements))
+    calories = get_inputs('day1.txt')
+    print(part1(calories))
+    print(part2(calories))

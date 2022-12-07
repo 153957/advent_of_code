@@ -20,6 +20,6 @@ def part2(sacks):
 
 
 if __name__ == '__main__':
-    measurements = get_inputs('day3.txt')
-    print(part1(measurements))
-    print(part2(measurements))
+    sacks = get_inputs('day3.txt')
+    print(part1(sacks))
+    print(part2(sacks))

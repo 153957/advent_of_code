@@ -32,6 +32,6 @@ def part2(assignments):
 
 
 if __name__ == '__main__':
-    measurements = get_inputs('day4.txt')
-    print(part1(measurements))
-    print(part2(measurements))
+    assignments = get_inputs('day4.txt')
+    print(part1(assignments))
+    print(part2(assignments))

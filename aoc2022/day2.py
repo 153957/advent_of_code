@@ -30,6 +30,6 @@ def part2(hands):
 
 
 if __name__ == '__main__':
-    measurements = get_inputs('day2.txt')
-    print(part1(measurements))
-    print(part2(measurements))
+    hands = get_inputs('day2.txt')
+    print(part1(hands))
+    print(part2(hands))
