@@ -6,20 +6,24 @@ from aoc2023 import get_inputs
 class TestDayMixin:
     def setUp(self):
         self.day = __import__(f'aoc2023.day{self.n}', fromlist=['*'])
-        self.inputs = get_inputs.get_inputs(f'day{self.n}_example.txt')
+        self.inputs_part1 = get_inputs.get_inputs(f'day{self.n}_example.txt')
+        try:
+            self.inputs_part2 = get_inputs.get_inputs(f'day{self.n}_part2_example.txt')
+        except FileNotFoundError:
+            self.inputs_part2 = self.inputs_part1
 
     def test_part1(self):
-        self.assertEqual(self.part1, self.day.part1(self.inputs))
+        self.assertEqual(self.part1, self.day.part1(self.inputs_part1))
 
     def test_part2(self):
-        self.assertEqual(self.part2, self.day.part2(self.inputs))
+        self.assertEqual(self.part2, self.day.part2(self.inputs_part2))
 
 
 
 class TestDay1(TestDayMixin, unittest.TestCase):
     n = 1
-    part1 = None
-    part2 = None
+    part1 = 142
+    part2 = 281
 
 
 class TestDay2(TestDayMixin, unittest.TestCase):
