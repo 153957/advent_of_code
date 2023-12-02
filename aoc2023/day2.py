@@ -39,7 +39,6 @@ def part2(data):
     return game_power_sum
 
 
-
 if __name__ == '__main__':
     data = get_inputs(f'{Path(__file__).stem}.txt')
     print(part1(data))
