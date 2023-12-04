@@ -6,8 +6,8 @@ from .get_inputs import get_inputs
 def part1(data):
     return sum(
         int(2 ** len(
-            {int(number) for number in line.partition(':')[2].partition('|')[0].split(' ') if number}.intersection(
-                {int(number) for number in line.partition('|')[2].split(' ') if number}
+            set(line.partition(':')[2].partition('|')[0].split()).intersection(
+                line.partition('|')[2].split()
             )
         ) / 2)
         for line in data
@@ -17,8 +17,8 @@ def part1(data):
 def part2(data):
     scores = [
         len(
-            {int(number) for number in line.partition(':')[2].partition('|')[0].split(' ') if number}.intersection(
-                {int(number) for number in line.partition('|')[2].split(' ') if number}
+            set(line.partition(':')[2].partition('|')[0].split()).intersection(
+                line.partition('|')[2].split()
             )
         )
         for line in data
