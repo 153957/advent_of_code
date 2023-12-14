@@ -101,7 +101,7 @@ class TestDay13(TestDayMixin, unittest.TestCase):
 
 class TestDay14(TestDayMixin, unittest.TestCase):
     n = 14
-    part1 = None
+    part1 = 136
     part2 = None
 
 
