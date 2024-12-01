@@ -22,8 +22,8 @@ class TestDayMixin:
 
 class TestDay1(TestDayMixin, unittest.TestCase):
     n = 1
-    part1 = None
-    part2 = None
+    part1 = 11
+    part2 = 31
 
 
 class TestDay2(TestDayMixin, unittest.TestCase):
