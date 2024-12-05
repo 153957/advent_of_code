@@ -46,8 +46,8 @@ class TestDay4(TestDayMixin, unittest.TestCase):
 
 class TestDay5(TestDayMixin, unittest.TestCase):
     n = 5
-    part1 = None
-    part2 = None
+    part1 = 143
+    part2 = 123
 
 
 class TestDay6(TestDayMixin, unittest.TestCase):
